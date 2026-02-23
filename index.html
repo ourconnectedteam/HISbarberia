@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIS Barbería — Peluquería & Estética Masculina · Madrid Salamanca</title>
+  <meta name="description" content="Barbería premium en el barrio de Salamanca, Madrid. Cortes, barba, estética facial y corporal para hombres. Reserva tu cita online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo">HIS</div>
+      <div class="preloader__bar"><div class="preloader__progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__nav">
+      <a href="#servicios" class="mobile-menu__link">Servicios</a>
+      <a href="#nosotros" class="mobile-menu__link">Nosotros</a>
+      <a href="#contacto" class="mobile-menu__link">Contacto</a>
+      <a href="https://booksy.com/en-us/search?q=his+barberia&type=biz&r=es" target="_blank" rel="noopener noreferrer" class="mobile-menu__link mobile-menu__link--gold">Reservar cita</a>
+    </nav>
+    <div class="mobile-menu__footer">Calle de Lagasca, 58 · Madrid</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">HIS <span>Barbería</span></a>
+    <ul class="nav__links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="https://booksy.com/en-us/search?q=his+barberia&type=biz&r=es" target="_blank" rel="noopener noreferrer" class="nav__cta">Reservar cita</a>
+    <button class="nav__burger" id="navBurger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__circle hero__circle--1"></div>
+      <div class="hero__circle hero__circle--2"></div>
+      <div class="hero__lines">
+        <div class="hero__line"></div>
+        <div class="hero__line"></div>
+        <div class="hero__line"></div>
+      </div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="hero__eyebrow-dot"></span>
+        <span>Madrid · Salamanca · Est. 2021</span>
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__title-word" style="--d:0">HIS</span>
+        <span class="hero__title-word hero__title-word--serif" style="--d:1">Barbería</span>
+      </h1>
+      <p class="hero__sub">Peluquería &amp; Estética para Hombres</p>
+      <div class="hero__actions">
+        <a href="https://booksy.com/en-us/search?q=his+barberia&type=biz&r=es" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reserva tu cita</a>
+        <a href="#servicios" class="btn btn--outline">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="hero__aside-left">
+      <span>Calle Lagasca, 58 · 28001 Madrid</span>
+    </div>
+    <div class="hero__aside-right">
+      <div class="hero__scroll-indicator">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </div>
+
+    <!-- Decorative scissors SVG -->
+    <div class="hero__deco" aria-hidden="true">
+      <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="58" stroke="currentColor" stroke-width="0.5"/>
+        <circle cx="60" cy="60" r="46" stroke="currentColor" stroke-width="0.5"/>
+        <line x1="60" y1="2" x2="60" y2="118" stroke="currentColor" stroke-width="0.5"/>
+        <line x1="2" y1="60" x2="118" y2="60" stroke="currentColor" stroke-width="0.5"/>
+        <circle cx="60" cy="60" r="4" stroke="currentColor" stroke-width="0.5"/>
+      </svg>
+    </div>
+
+    <!-- Portrait photo -->
+    <div class="hero__portrait" aria-hidden="true">
+      <img src="https://hisbarberia.com/wp-content/uploads/2025/03/IMG_5078-scaled.jpg"
+           alt="Cliente en HIS Barbería Madrid" loading="eager" />
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Corte · Barba · Afeitado Clásico · Estética Facial · Manicura · Masaje · Depilación · Antiaging · Skin Fade · </span>
+      <span>Corte · Barba · Afeitado Clásico · Estética Facial · Manicura · Masaje · Depilación · Antiaging · Skin Fade · </span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ ABOUT -->
+  <section class="about" id="nosotros">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__visual">
+          <div class="about__visual-frame">
+            <div class="about__visual-inner">
+              <img class="about__visual-photo"
+                   src="his%20barberia%20photo.jpeg"
+                   alt="Interior de HIS Barbería en el barrio de Salamanca, Madrid" />
+              <div class="about__visual-overlay"></div>
+              <div class="about__visual-year">2021</div>
+              <div class="about__visual-location">Salamanca<br/>Madrid</div>
+            </div>
+            <div class="about__visual-border"></div>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <span class="label">Nuestra Filosofía</span>
+          <h2 class="about__title">
+            Más que<br/>una <em>barbería</em>
+          </h2>
+          <div class="about__body">
+            <p>Desde 2021, HIS Barbería nació en el corazón del barrio de Salamanca con la convicción de que cada hombre merece un espacio donde la tradición artesanal y el cuidado moderno se encuentran en perfecta armonía.</p>
+            <p>Trabajamos con productos de <strong>La Biosthetique</strong> y empleamos técnicas que honran lo clásico mientras abrazan lo contemporáneo. Cada visita es un ritual, cada detalle importa.</p>
+          </div>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-n">4+</span>
+              <span class="about__stat-l">Años de experiencia</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-n">30+</span>
+              <span class="about__stat-l">Servicios disponibles</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-n">5★</span>
+              <span class="about__stat-l">Valoración de clientes</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FEATURED PRICES -->
+  <section class="fp" id="precios">
+    <div class="fp__inner">
+
+      <!-- Left: content -->
+      <div class="fp__content">
+        <span class="label">Corte &amp; Estilo</span>
+        <h2 class="fp__title">Precios de<br/><em>corte y estilo</em></h2>
+        <p class="fp__desc">Una gama completa de servicios de barbería para el hombre moderno — desde cortes clásicos y skin fades hasta afeitados tradicionales con navaja y cuidado de barba.</p>
+
+        <ul class="fp__list">
+          <li class="fp__item">
+            <span class="fp__name">Corte Hombre + Lavado</span>
+            <span class="fp__price">€32</span>
+          </li>
+          <li class="fp__item">
+            <span class="fp__name">Corte Skin Fade</span>
+            <span class="fp__price">€36</span>
+          </li>
+          <li class="fp__item">
+            <span class="fp__name">Corte Localizado</span>
+            <span class="fp__price">€25</span>
+          </li>
+          <li class="fp__item">
+            <span class="fp__name">Afeitado de Barba Clásico</span>
+            <span class="fp__price">€25</span>
+          </li>
+          <li class="fp__item">
+            <span class="fp__name">Arreglo de Barba</span>
+            <span class="fp__price">€25</span>
+          </li>
+          <li class="fp__item">
+            <span class="fp__name">Alisado</span>
+            <span class="fp__price">€45</span>
+          </li>
+        </ul>
+
+        <div class="fp__actions">
+          <a href="https://booksy.com/en-us/search?q=his+barberia&type=biz&r=es" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><rect x="1" y="2" width="12" height="11" rx="1" stroke="currentColor" stroke-width="1.2"/><line x1="1" y1="5" x2="13" y2="5" stroke="currentColor" stroke-width="1.2"/><line x1="4" y1="1" x2="4" y2="3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><line x1="10" y1="1" x2="10" y2="3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            Reservar cita
+          </a>
+          <a href="#servicios" class="btn btn--gold">
+            Lista completa
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><line x1="2" y1="7" x2="12" y2="7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><polyline points="8,3 12,7 8,11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: full-height photo slider -->
+      <div class="fp__visual" id="fpSlider">
+
+        <!-- Slides — fill the entire column -->
+        <div class="fp__slide is-active">
+          <img src="https://hisbarberia.com/wp-content/uploads/2022/10/manicurista-y-barbero-de-his-barberia-en-madrid-con-cliente-recibiendo-cuidados-esteticos-1-1024x682.jpg"
+               alt="Equipo de HIS Barbería con cliente" loading="lazy" style="object-position:62% 25%" />
+        </div>
+        <div class="fp__slide">
+          <img src="https://hisbarberia.com/wp-content/uploads/2025/03/IMG_5078-scaled-e1742903689846-1024x844.jpg"
+               alt="Interior de HIS Barbería, Salamanca" loading="lazy" style="object-position:40% center" />
+        </div>
+        <div class="fp__slide">
+          <img src="https://hisbarberia.com/wp-content/uploads/2022/09/hombre-acostado-recibe-limpieza-facial-1024x683.jpg"
+               alt="Tratamiento facial en HIS Barbería" loading="lazy" style="object-position:center 20%" />
+        </div>
+        <div class="fp__slide">
+          <img src="https://hisbarberia.com/wp-content/uploads/2022/10/manicurista-de-his-barberia-haciendo-manicura-hombre-1-1024x683.jpg"
+               alt="Manicura en HIS Barbería" loading="lazy" style="object-position:center 30%" />
+        </div>
+
+        <!-- Left-edge gradient blends into content -->
+        <div class="fp__edge-grad"></div>
+        <!-- Bottom gradient behind dots/tag -->
+        <div class="fp__btm-grad"></div>
+
+        <!-- Gold corner accents -->
+        <div class="fp__corner fp__corner--tl"></div>
+        <div class="fp__corner fp__corner--br"></div>
+
+        <!-- Caption -->
+        <div class="fp__tag">
+          <span class="fp__tag-line"></span>
+          <span>HIS Barbería &nbsp;·&nbsp; Madrid</span>
+        </div>
+
+        <!-- Dot navigation -->
+        <div class="fp__dots">
+          <button class="fp__dot is-active" data-slide="0" aria-label="Foto 1"></button>
+          <button class="fp__dot" data-slide="1" aria-label="Foto 2"></button>
+          <button class="fp__dot" data-slide="2" aria-label="Foto 3"></button>
+          <button class="fp__dot" data-slide="3" aria-label="Foto 4"></button>
+        </div>
+
+        <!-- Prev / Next arrows -->
+        <button class="fp__arrow fp__arrow--prev" id="fpPrev" aria-label="Anterior">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="10,2 4,8 10,14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="fp__arrow fp__arrow--next" id="fpNext" aria-label="Siguiente">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="6,2 12,8 6,14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SERVICES -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="services__header">
+        <span class="label">Nuestros Servicios</span>
+        <h2 class="services__title">El arte del<br/><em>cuidado masculino</em></h2>
+        <p class="services__desc">Tratamientos de precisión para el hombre que valora la calidad en cada detalle.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- 01 Peluquería -->
+        <div class="svc-card reveal">
+          <div class="svc-card__head">
+            <span class="svc-card__num">01</span>
+            <h3 class="svc-card__name">Peluquería</h3>
+          </div>
+          <ul class="svc-list">
+            <li><span>Corte Hombre + Lavado</span><span class="price">€32</span></li>
+            <li><span>Corte Localizado</span><span class="price">€25</span></li>
+            <li><span>Corte Skin Fade</span><span class="price">€36</span></li>
+            <li><span>Corte Joven (13–17 años)</span><span class="price">€26</span></li>
+            <li><span>Corte Niño (0–12 años)</span><span class="price">€18</span></li>
+            <li><span>Lavado</span><span class="price">€9</span></li>
+            <li><span>Alisado</span><span class="price">€45</span></li>
+            <li><span>Atenuado de Canas</span><span class="price">€22</span></li>
+          </ul>
+        </div>
+
+        <!-- 02 Barbería -->
+        <div class="svc-card reveal" style="--rd:0.1s">
+          <div class="svc-card__head">
+            <span class="svc-card__num">02</span>
+            <h3 class="svc-card__name">Barbería</h3>
+          </div>
+          <ul class="svc-list">
+            <li><span>Afeitado de Barba Clásico</span><span class="price">€25</span></li>
+            <li><span>Arreglo de Barba</span><span class="price">€25</span></li>
+          </ul>
+          <div class="svc-card__note">
+            Rasurado suave con navaja, toallas caliente y fría, y finishing con aftershave.
+          </div>
+        </div>
+
+        <!-- 03 Estética Facial -->
+        <div class="svc-card reveal" style="--rd:0.2s">
+          <div class="svc-card__head">
+            <span class="svc-card__num">03</span>
+            <h3 class="svc-card__name">Estética Facial</h3>
+          </div>
+          <ul class="svc-list">
+            <li><span>Oxigenación Facial</span><span class="price">€65</span></li>
+            <li><span>Tratamiento Hidratación</span><span class="price">€60</span></li>
+            <li><span>Tratamiento Antiacné</span><span class="price">€55</span></li>
+            <li><span>Tratamiento Antiaging</span><span class="price">€74</span></li>
+          </ul>
+        </div>
+
+        <!-- 04 Cuerpo & Manos -->
+        <div class="svc-card reveal" style="--rd:0.3s">
+          <div class="svc-card__head">
+            <span class="svc-card__num">04</span>
+            <h3 class="svc-card__name">Cuerpo &amp; Manos</h3>
+          </div>
+          <ul class="svc-list">
+            <li><span>Masaje Relajante</span><span class="price">€63</span></li>
+            <li><span>Masaje Descontracturante</span><span class="price">€65</span></li>
+            <li><span>Masaje Espalda</span><span class="price">€35</span></li>
+            <li><span>Peeling Corporal</span><span class="price">€50</span></li>
+            <li><span>Manicura Completa</span><span class="price">€16</span></li>
+            <li><span>Pedicura</span><span class="price">€32</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Depilación -->
+      <div class="svc-waxing reveal">
+        <div class="svc-waxing__head">
+          <span class="svc-card__num">05</span>
+          <h3 class="svc-card__name">Depilación Masculina</h3>
+        </div>
+        <div class="svc-waxing__grid">
+          <div class="wax-item"><span>Diseño de Cejas</span><span class="price">€12</span></div>
+          <div class="wax-item"><span>Nariz</span><span class="price">€10</span></div>
+          <div class="wax-item"><span>Oreja</span><span class="price">€10</span></div>
+          <div class="wax-item"><span>Axilas</span><span class="price">€10</span></div>
+          <div class="wax-item"><span>Medias Piernas</span><span class="price">€15</span></div>
+          <div class="wax-item"><span>Piernas Completas</span><span class="price">€32</span></div>
+          <div class="wax-item"><span>Brazos</span><span class="price">€15</span></div>
+          <div class="wax-item"><span>Abdomen</span><span class="price">€25</span></div>
+          <div class="wax-item"><span>Espalda Completa</span><span class="price">€25</span></div>
+          <div class="wax-item"><span>Media Espalda</span><span class="price">€16</span></div>
+          <div class="wax-item"><span>Ingles</span><span class="price">€20</span></div>
+        </div>
+      </div>
+
+      <div class="services__cta reveal">
+        <a href="https://booksy.com/en-us/search?q=his+barberia&type=biz&r=es" target="_blank" rel="noopener noreferrer" class="btn btn--gold btn--large">Reservar cita ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ GALLERY -->
+  <section class="gallery" id="galeria">
+
+    <div class="gallery__head container">
+      <div class="gallery__head-left">
+        <span class="label">Galería</span>
+        <h2 class="gallery__title">Vive la<br/><em>experiencia</em></h2>
+      </div>
+      <div class="gallery__head-right">
+        <span class="gallery__count">01 — 07</span>
+        <a href="https://instagram.com/hisbarberia" target="_blank" rel="noopener noreferrer" class="gallery__ig-link">@hisbarberia&nbsp;↗</a>
+      </div>
+    </div>
+
+    <div class="gallery__grid" id="galleryGrid">
+
+      <!-- 1 · col 1 · row-span 2 — tall hero -->
+      <figure class="gallery__item" data-index="0" tabindex="0" role="button" aria-label="Ver foto en grande">
+        <img src="https://hisbarberia.com/wp-content/uploads/2025/03/IMG_5078-scaled-e1742903689846-1024x844.jpg"
+             alt="Interior de HIS Barbería, Salamanca Madrid" loading="lazy" />
+        <figcaption>
+          <span class="gallery__cap-cat">El Espacio</span>
+          <span class="gallery__cap-title">Interior · Salamanca</span>
+        </figcaption>
+      </figure>
+
+      <!-- 2 · col 2 · row 1 -->
+      <figure class="gallery__item" data-index="1" tabindex="0" role="button" aria-label="Ver foto en grande">
+        <img src="https://hisbarberia.com/wp-content/uploads/2022/10/manicurista-y-barbero-de-his-barberia-en-madrid-con-cliente-recibiendo-cuidados-esteticos-1-1024x682.jpg"
+             alt="Equipo de HIS Barbería con cliente" loading="lazy" />
+        <figcaption>
+          <span class="gallery__cap-cat">Equipo</span>
+          <span class="gallery__cap-title">Atención al cliente</span>
+        </figcaption>
+      </figure>
+
+      <!-- 3 · col 3 · row 1 -->
+      <figure class="gallery__item" data-index="2" tabindex="0" role="button" aria-label="Ver foto en grande">
+        <img src="https://hisbarberia.com/wp-content/uploads/2022/06/his_barberia_footer_img_1.jpg"
+             alt="Silla de barbero de HIS Barbería" loading="lazy" />
+        <figcaption>
+          <span class="gallery__cap-cat">Barbería</span>
+          <span class="gallery__cap-title">El sillón clásico</span>
+        </figcaption>
+      </figure>
+
+      <!-- 4 · col 2–3 · row 2 — wide panorama -->
+      <figure class="gallery__item gallery__item--wide" data-index="3" tabindex="0" role="button" aria-label="Ver foto en grande">
+        <img src="https://hisbarberia.com/wp-content/uploads/2022/06/his_barberia_footer_img_4.jpg"
+             alt="Salón de HIS Barbería en el barrio de Salamanca" loading="lazy" />
+        <figcaption>
+          <span class="gallery__cap-cat">Ambiente</span>
+          <span class="gallery__cap-title">Salón · Madrid</span>
+        </figcaption>
+      </figure>
+
+      <!-- 5 · col 1 · row 3 -->
+      <figure class="gallery__item" data-index="4" tabindex="0" role="button" aria-label="Ver foto en grande">
+        <img src="https://hisbarberia.com/wp-content/uploads/2022/09/hombre-acostado-recibe-limpieza-facial-1024x683.jpg"
+             alt="Limpieza facial para hombres en HIS Barbería" loading="lazy" />
+        <figcaption>
+          <span class="gallery__cap-cat">Estética</span>
+          <span class="gallery__cap-title">Limpieza facial</span>
+        </figcaption>
+      </figure>
+
+      <!-- 6 · col 2 · row 3 -->
+      <figure class="gallery__item" data-index="5" tabindex="0" role="button" aria-label="Ver foto en grande">
+        <img src="https://hisbarberia.com/wp-content/uploads/2022/10/manicurista-de-his-barberia-haciendo-manicura-hombre-1-1024x683.jpg"
+             alt="Manicura para hombre en HIS Barbería Madrid" loading="lazy" />
+        <figcaption>
+          <span class="gallery__cap-cat">Manos</span>
+          <span class="gallery__cap-title">Manicura masculina</span>
+        </figcaption>
+      </figure>
+
+      <!-- 7 · col 3 · row 3 -->
+      <figure class="gallery__item" data-index="6" tabindex="0" role="button" aria-label="Ver foto en grande">
+        <img src="https://hisbarberia.com/wp-content/uploads/2022/10/esteticista-haciendo-depilacion-con-cera-a-hombre-joven-1-1-1024x683.jpg"
+             alt="Depilación con cera para hombres en HIS Barbería" loading="lazy" />
+        <figcaption>
+          <span class="gallery__cap-cat">Depilación</span>
+          <span class="gallery__cap-title">Cera masculina</span>
+        </figcaption>
+      </figure>
+
+    </div><!-- /.gallery__grid -->
+
+  </section>
+
+  <!-- ═══════════════════════════════════════ QUOTE -->
+  <section class="quote-sec">
+    <div class="quote-sec__inner reveal">
+      <div class="quote-sec__ornament">
+        <span></span><span></span><span></span>
+      </div>
+      <blockquote class="quote-sec__text">
+        "Un hombre que cuida su imagen<br/>cuida su confianza"
+      </blockquote>
+      <cite class="quote-sec__source">HIS Barbería &nbsp;·&nbsp; Madrid, Salamanca</cite>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="contact__grid">
+
+        <div class="contact__info reveal">
+          <span class="label">Encuéntranos</span>
+          <h2 class="contact__title">Ven a<br/><em>conocernos</em></h2>
+
+          <div class="contact__details">
+            <div class="contact__detail">
+              <span class="contact__detail-label">Dirección</span>
+              <span class="contact__detail-val">Calle de Lagasca, 58<br/>28001 Madrid, España</span>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-label">Teléfono</span>
+              <a href="tel:+34910734397" class="contact__detail-val contact__detail-val--link">+34 910 73 43 97</a>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-label">Email</span>
+              <a href="mailto:info@hisbarberia.com" class="contact__detail-val contact__detail-val--link">info@hisbarberia.com</a>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-label">Horario</span>
+              <div class="contact__detail-val">
+                <span>Lunes – Viernes &nbsp; 10:00 – 20:30</span>
+                <span>Sábado &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 – 14:30</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__social">
+            <a href="https://instagram.com/hisbarberia" target="_blank" rel="noopener noreferrer" class="contact__social-link">Instagram</a>
+            <a href="https://facebook.com/hisbarberia" target="_blank" rel="noopener noreferrer" class="contact__social-link">Facebook</a>
+            <a href="https://wa.me/34910734397" target="_blank" rel="noopener noreferrer" class="contact__social-link">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="booking-card reveal">
+          <span class="booking-card__label">Reserva Online</span>
+          <h3 class="booking-card__title">Tu próxima<br/>cita te espera</h3>
+          <p class="booking-card__text">Reserva en minutos a través de Booksy. Elige tu servicio, barbero y horario preferido sin llamadas.</p>
+          <a href="https://booksy.com/en-us/search?q=his+barberia&type=biz&r=es" target="_blank" rel="noopener noreferrer" class="btn btn--gold btn--full">Reservar en Booksy</a>
+          <div class="booking-card__or"><span>o llámanos directamente</span></div>
+          <a href="tel:+34910734397" class="booking-card__phone">+34 910 73 43 97</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">HIS Barbería</span>
+        <span class="footer__tagline">Peluquería &amp; Estética Masculina<br/>Calle de Lagasca, 58 · Madrid</span>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://booksy.com/en-us/search?q=his+barberia&type=biz&r=es" target="_blank" rel="noopener noreferrer">Reservar</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 HIS Barbería. Todos los derechos reservados.</span>
+      <span>Hecho con precisión en Madrid</span>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Galería de imágenes" hidden>
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><line x1="2" y1="2" x2="18" y2="18" stroke="currentColor" stroke-width="1.5"/><line x1="18" y1="2" x2="2" y2="18" stroke="currentColor" stroke-width="1.5"/></svg>
+    </button>
+    <button class="lightbox__arrow lightbox__arrow--prev" id="lightboxPrev" aria-label="Anterior">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="15 18 9 12 15 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lightbox__arrow lightbox__arrow--next" id="lightboxNext" aria-label="Siguiente">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="9 18 15 12 9 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <div class="lightbox__caption" id="lightboxCaption"></div>
+      <div class="lightbox__counter" id="lightboxCounter"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
